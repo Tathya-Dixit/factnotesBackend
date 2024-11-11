@@ -5,9 +5,10 @@ from django.db import models
 class Note(models.Model):
     title = models.CharField(max_length=50)
     body = models.TextField()
+    bgcolor = models.CharField(max_length = 50,default="rgb(17 24 39)")
     archived = models.BooleanField(default=False)
-    updated = models.TimeField(auto_now=True)
-    created = models.TimeField(auto_now_add = True)
+    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add = True)
     
 
     class Meta:
