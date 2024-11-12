@@ -112,9 +112,9 @@ WSGI_APPLICATION = 'factnotes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'thehomemadekitchen',
+        'NAME': 'factnotes',
         'USER': 'postgres',
-        'PASSWORD': 'password',
+        'PASSWORD': 'whoknows',
         'HOST': 'localhost',
         'PORT': '5432',
     }
